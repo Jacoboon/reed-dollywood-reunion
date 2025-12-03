@@ -1,4 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reed Family Reunion @ Dollywood</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a sample HTML file.</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Reed Family Reunion @ Dollywood</h1>
+      <p class="tagline">Late Spring • Pigeon Forge, Tennessee • Flower &amp; Food Festival</p>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#rsvp">RSVP</a>
+        <a href="#details">Details</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT / STORY -->
+    <section id="about" class="section">
+      <h2>Why Dollywood? Why Now?</h2>
+      <p>
+        As kids, we gathered at Uncle Steve’s house in Ohio for holidays and big family moments.
+        Life got busy, people spread out, and those traditions faded into “remember when…?”
+      </p>
+      <p>
+        This site is our way to <strong>bring the Reed tribe back together</strong> in one place:
+        Dollywood in late spring, when the park is covered in flowers and the Smoky Mountains
+        are green and alive.
+      </p>
+      <p>
+        Friends, partners, kids, and bonus family are all welcome. If you love a Reed,
+        you’re invited.
+      </p>
+    </section>
+
+    <!-- PRICING / CALCULATOR -->
+    <section id="pricing" class="section section-alt">
+      <h2>Pricing Overview (Approximate)</h2>
+      <p class="section-intro">
+        These are ballpark numbers so everyone can plan a budget. Final prices may change
+        slightly when we book.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Park Tickets</h3>
+          <ul>
+            <li><strong>Adult 2-Day:</strong> ~<span class="price">$134</span> per person</li>
+            <li><strong>Adult 1-Day:</strong> ~<span class="price">$101</span> per person</li>
+            <li><strong>Kids / Seniors:</strong> A bit cheaper (we’ll share exact numbers when we book)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Food in the Park</h3>
+          <ul>
+            <li><strong>Plan on:</strong> ~$40–50 per person per park day</li>
+            <li>Covers 2 meals + snacks</li>
+            <li>Outside the park, we’ll use the cabin kitchen to save money</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Parking &amp; Other</h3>
+          <ul>
+            <li><strong>Parking at Dollywood:</strong> ~$25 per car per day</li>
+            <li>Cabin, groceries, and special extras like Dolly Parton’s Stampede will be handled separately.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Family Budget Estimator</h3>
+      <p class="section-intro">
+        Use this quick estimator to get a rough idea of what your group might spend
+        on park tickets and food (not including travel or lodging).
+      </p>
+
+      <form id="budget-form" class="budget-form">
+        <div class="form-row">
+          <label for="adults">Number of adults (18+)</label>
+          <input type="number" id="adults" min="0" value="2" />
+        </div>
+
+        <div class="form-row">
+          <label for="kids">Number of kids (4–17)</label>
+          <input type="number" id="kids" min="0" value="0" />
+        </div>
+
+        <div class="form-row">
+          <label for="seniors">Number of seniors (62+)</label>
+          <input type="number" id="seniors" min="0" value="0" />
+        </div>
+
+        <div class="form-row">
+          <label for="days">Park days</label>
+          <select id="days">
+            <option value="1">1 day</option>
+            <option value="2" selected>2 days</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="foodPerDay">Food budget per person per day</label>
+          <input type="number" id="foodPerDay" min="10" value="45" />
+        </div>
+
+        <button type="button" id="calc-btn">Calculate Estimate</button>
+      </form>
+
+      <div id="budget-result" class="budget-result">
+        <h4>Estimated Total for Your Group</h4>
+        <p class="budget-number">$0</p>
+        <p class="budget-note">
+          This is a rough estimate for tickets + food only. Actual prices may vary.
+        </p>
+      </div>
+    </section>
+
+    <!-- RSVP SECTION -->
+    <section id="rsvp" class="section">
+      <h2>RSVP &amp; Group Info</h2>
+      <p class="section-intro">
+        Please fill out the form below with your group details and budget.
+        This isn’t a binding contract — it just helps us choose dates, cabins, and ticket options
+        that make sense for everyone.
+      </p>
+
+      <ol class="bullet-list">
+        <li>List your household name (e.g., “Steve &amp; Carol’s crew”).</li>
+        <li>Tell us how many adults, kids, and seniors you might bring.</li>
+        <li>Share your <strong>comfortable budget</strong> and your absolute <strong>max</strong>.</li>
+        <li>Let us know if you’d prefer:
+          <ul>
+            <li>A shared cabin with everyone</li>
+            <li>Your own hotel room</li>
+            <li>Or you’re flexible</li>
+          </ul>
+        </li>
+      </ol>
+
+      <!-- Replace the src below with your real Google Form link -->
+      <div class="form-embed">
+        <p><em>Form coming soon! Once the organizer (hi) creates the Google Form, it will show up below.</em></p>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeVhWp6MY7gDeOkk5OrelJXTxiQNeGSJUausp-KYvb3QK4t8Q/viewform?embedded=true" width="640" height="2062" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>      </div>
+    </section>
+
+    <!-- DETAILS / FAQ -->
+    <section id="details" class="section section-alt">
+      <h2>Event Details (Draft)</h2>
+      <p class="section-intro">
+        These details are flexible and will be finalized once we see everyone’s RSVPs.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>When</h3>
+          <p>
+            Target window: <strong>late April to early May</strong>, during Dollywood’s
+            Flower &amp; Food Festival (late April–early June each year).
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Where</h3>
+          <p>
+            Dollywood theme park in Pigeon Forge, Tennessee, plus a nearby cabin
+            or hotel for the Reed tribe to gather.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Who’s Invited?</h3>
+          <p>
+            All Reeds, their people, and anyone else who feels like family.
+            Partners, kids, friends — if you love us, you’re in.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>What’s the Plan?</h3>
+          <ul>
+            <li>3 nights in a cabin or hotel</li>
+            <li>2 days in Dollywood (rides, shows, flowers, food)</li>
+            <li>One big shared dinner and memory night</li>
+            <li>Optional group outing like Dolly Parton’s Stampede</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Reed Family Reunion Planning Hub • Built with love, GitHub Pages, and way too much excitement for Dollywood.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
 </body>
+</html>
