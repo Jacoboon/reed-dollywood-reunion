@@ -91,6 +91,20 @@ body {
   font-size: 1.6rem;
 }
 
+.section h3 {
+  margin: 1rem 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.section ul,
+.section ol {
+  padding-left: 1.1rem;
+}
+
+.section li + li {
+  margin-top: 0.25rem;
+}
+
 .section-intro {
   color: var(--text-muted);
   margin-bottom: 1rem;
@@ -208,6 +222,18 @@ button:hover {
   border: 1px dashed #4b5563;
   padding: 1rem;
   background: rgba(15, 23, 42, 0.65);
+}
+
+.gallery-block {
+  margin-top: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0.5rem 0 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  color: var(--accent-soft);
 }
 
 .gallery-grid {
